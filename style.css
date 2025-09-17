@@ -1,0 +1,109 @@
+.body {
+    margin: 0px;
+    
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "circle circle header header"
+        "top top top top"
+        "leftSide leftSide middle middle"
+        "footer footer footer circleBottom";
+    grid-template-columns: 20px 100px 1fr 120px;
+    grid-template-rows: 120px 60px 1fr 120px;
+    height: 100vh;
+    gap: 10px;
+    font-family: Tahoma;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: header;
+    background: green;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.circle {
+    grid-area: circle;
+    background: green;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.circleBottom {
+    grid-area: circleBottom;
+    background: green;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+
+
+.leftSide {
+    grid-area: leftSide;
+    background-color:darkorchid ;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.top {
+    grid-area: top;
+    background-color:darkorchid ;
+    padding: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.middle {
+    grid-area: middle;
+    background-color:crimson;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: orange;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
